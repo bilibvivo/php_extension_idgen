@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("IDGen", "for IDGen support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("IDGen", "enable IDGen support", "no");
+
+if (PHP_IDGEN != "no") {
+	EXTENSION("IDGen", "IDGen.c");
+}
+
